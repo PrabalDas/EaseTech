@@ -16,7 +16,6 @@ class HomePage extends StatelessWidget {
       body: Stack(children: [
         Container(
           decoration: canvasdecoration,
-          child: 'hello'.text.make().centered(),
         ),
         Positioned(
           top: 50,

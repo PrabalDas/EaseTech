@@ -1,3 +1,5 @@
+import 'package:ease_tech/Pages/CameraPage.dart';
+import 'package:ease_tech/Utils/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -25,6 +27,16 @@ class TopAdress extends StatelessWidget {
             color: canvasColor,
             shape: StadiumBorder(),
             child: Container(
+              child: IconButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, MyRoutes.cameraRoute);
+                  },
+                  icon: Icon(
+                    Icons.camera_alt,
+                    color: context.canvasColor,
+                    size: 30,
+                    semanticLabel: 'camera',
+                  )),
               height: 50,
               width: 100,
             ),
